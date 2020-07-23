@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+var arr=['1.jpg','2.jpg','3.jpg','daum.png','naver.jpg']
+idx=0
+function prev(){
+	idx--
+	document.img.src = '../img/'+arr[idx%5]
+}
+
+function next(){
+	idx++
+	document.img.src= '../img/'+arr[idx%5]
+}
+
+/*
+window.onload=function(){//익명함수}
+
+}
+*/
+</script>
+</head>
+<body>
+<img src="../img/1.jpg" name = 'img'><br>
+<input type="button" value ="prev" onclick="prev()">
+<input type="button" value ="next" onclick="next()">
+</body>
+</html>
