@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="test.js">
+</script>
+<script>
+var x=10//전역변수
+function f3(){
+	var x=100//지역변수
+	y=200//전역변수
+	alert("x:"+x+"/y:"+y)
+	document.write("f3<br>");
+}
+
+function f4(a,b){
+	alert("x:"+x+"/y:"+y)
+	return a-b
+}
+</script>
+</head>
+<body>
+<script>
+f1()
+res=f2(2,3)
+document.write("2+3="+res+"<br>")
+f3()
+res=f4(2,3)
+document.write("2-3="+res)
+
+</script>
+</body>
+</html>

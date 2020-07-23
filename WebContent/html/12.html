@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+table{
+	color:black;
+	background-color:skyblue;
+}
+
+.text{
+	color:black;
+	background-color:white;
+	width:210px;
+	height:30px;
+}
+.btn{
+	color:black;
+	background-color:white;
+	width:50px;
+	height:30px;
+}
+</style>
+<script>
+function input(a){
+	
+	f.res.value+=a
+}
+function c1(){
+	f.res.value=""
+}
+function cal(){
+	f.res.value=eval(f.res.value)
+}
+
+</script>
+
+</head>
+<body>
+<form action="" name="f">
+<table>
+	<tr>
+		<td colspan="4"><input class="text" type="text" name="res"></td>	
+	</tr>
+	<tr>
+		<td><input class="btn" type="button" value="1" onclick="input(1)"></td>
+		<td><input class="btn" type="button" value="2" onclick="input(2)"></td>
+		<td><input class="btn" type="button" value="3" onclick="input(3)"></td>
+		<td><input class="btn" type="button" value="+" onclick="input('+')"></td>
+	</tr>
+	<tr>
+		<td><input class="btn" type="button" value="4" onclick="input(4)"></td>
+		<td><input class="btn" type="button" value="5" onclick="input(5)"></td>
+		<td><input class="btn" type="button" value="6" onclick="input(6)"></td>
+		<td><input class="btn" type="button" value="-" onclick="input('-')"></td>
+	</tr>
+	<tr>
+		<td><input class="btn" type="button" value="7" onclick="input(7)"></td>
+		<td><input class="btn" type="button" value="8" onclick="input(8)"></td>
+		<td><input class="btn" type="button" value="9" onclick="input(9)"></td>
+		<td><input class="btn" type="button" value="*" onclick="input('*')"></td>
+	</tr>
+	<tr>
+		<td><input class="btn" type="button" value="0" onclick="input(0)"></td>
+		<td><input class="btn" type="reset" value="c" onclick="c1()"></td>
+		<td><input class="btn" type="button" value="=" onclick="cal()"></td>
+		<td><input class="btn" type="button" value="/" onclick="input('/')"></td>
+	</tr>
+</table>
+</form>
+</body>
+</html>
